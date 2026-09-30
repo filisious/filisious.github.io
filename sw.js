@@ -1,7 +1,7 @@
 /* Increment VERSION when publishing edits. Network first keeps the card current. */
 const PREFIX='ak-card-'+self.registration.scope+'-';
-const VERSION=PREFIX+'v1';
-const ASSETS=['./','./index.html','./styles.css','./config.js','./script.js','./vendor/qrcode.js','./favicon.svg','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./contact.vcf'];
+const VERSION=PREFIX+'v2';
+const ASSETS=['./','./index.html','./styles.css','./config.js','./script.js','./qrcode.js','./favicon.svg','./manifest.webmanifest','./icon-192.png','./icon-512.png','./contact.vcf'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(PREFIX)&&key!==VERSION).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{
