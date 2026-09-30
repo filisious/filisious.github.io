@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alireza Khorasani | Digital Business Card</title>
+<meta name="description" content="International Trade · Foreign Trade Optimization · Financial Solutions">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c121c" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Alireza Khorasani | Digital Business Card">
+<meta property="og:description" content="International Trade · Foreign Trade Optimization · Financial Solutions">
+<meta property="og:type" content="website">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Alireza">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./config.js"></script>
+<script defer src="./vendor/qrcode.js"></script>
+<script defer src="./script.js"></script>
+</head>
+<body>
+<main class="card">
+<header class="topbar">
+ <span class="monogram" aria-hidden="true" dir="ltr">AK</span>
+ <nav id="languages" aria-label="Language"><button type="button" data-lang="en" lang="en">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="ru" lang="ru">RU</button><span aria-hidden="true">|</span><button type="button" data-lang="fa" lang="fa">فا</button></nav>
+</header>
+<section class="identity" aria-labelledby="name">
+<h1 id="name">Alireza Khorasani</h1>
+<p id="description">International Trade · Foreign Trade Optimization · Financial Solutions</p>
+</section>
+<a class="primary" id="save" href="./contact.vcf" download="Alireza-Khorasani.vcf"><span data-icon="contact"></span><span data-text="save">Save Contact</span></a>
+<div class="channels">
+<a id="whatsapp" href="https://wa.me/375259910262" target="_blank" rel="noopener noreferrer"><span data-icon="whatsapp"></span><span>WhatsApp</span></a>
+<a id="telegram" href="https://t.me/Alirezakhrsn" target="_blank" rel="noopener noreferrer"><span data-icon="telegram"></span><span>Telegram</span></a>
+<a id="call" href="tel:+375259910262"><span data-icon="phone"></span><span data-text="call">Call</span></a>
+<a id="mail" href="mailto:alirezakhrsn2@gmail.com"><span data-icon="mail"></span><span data-text="email">Email</span></a>
+</div>
+<div class="details">
+<div><a id="phone-detail" dir="ltr" href="tel:+375259910262">+375 25 991 02 62</a><button id="copy-phone" type="button" aria-label="Copy phone number"><span data-icon="copy"></span></button></div>
+<div><a id="email-detail" dir="ltr" href="mailto:alirezakhrsn2@gmail.com">alirezakhrsn2@gmail.com</a><button id="copy-email" type="button" aria-label="Copy email address"><span data-icon="copy"></span></button></div>
+</div>
+<footer><button id="share" type="button"><span data-icon="share"></span><span data-text="share">Share</span></button><button id="show-qr" type="button"><span data-icon="qr"></span><span data-text="qr">Show QR</span></button></footer>
+<noscript><p>Enable JavaScript for language selection, QR and sharing. Contact links and Save Contact still work.</p></noscript>
+</main>
+<dialog id="qr-dialog" aria-labelledby="qr-name" aria-describedby="qr-caption">
+<div class="qr-layout"><div class="qr-top"><span class="monogram" aria-hidden="true" dir="ltr">AK</span><button id="close-qr" type="button"><span data-text="close">Close</span><span data-icon="close"></span></button></div>
+<div class="qr-heading"><h2 id="qr-name">Alireza Khorasani</h2><p id="qr-caption" data-text="scan">Scan to connect</p></div>
+<div id="qr-code" role="img" aria-label="QR"></div><p id="qr-error" role="status" hidden></p><a id="qr-url" dir="ltr"></a></div>
+</dialog>
+<dialog id="copy-dialog" aria-labelledby="copy-caption"><form method="dialog"><p id="copy-caption" data-text="manual">Select and copy this text:</p><input id="manual-copy" readonly dir="ltr"><button class="primary" data-text="close">Close</button></form></dialog>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body></html>
